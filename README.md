@@ -5,7 +5,7 @@
 
 This is my bookmarklets repository. What is a bookmarklet and how to use it? [Here](https://www.freecodecamp.org/news/what-are-bookmarklets/) is a good explanation with some examples; remember: it's essential that **JavaScript execution** is not blocked in the browser.
 
-The above *Bookmarklets.html* file contains all the bookmarklets in a browser importable file; they can also be saved individually as bookmarks from the *All-bookmarklets.js* file. There's also an Italian version ("-ita") of the two files.
+The above *Bookmarklets.html* file contains all the bookmarklets in a browser importable file; they can also be saved individually as bookmarks from the *All-bookmarklets.js* file. There's also an Italian version ("-ITA") of the two files.
 
 Most browsers will ask for **permission to read the clipboard** and when it's launched a multitab JS script (like for "AllMaps", "AllImgSearch" and "AISarch"), all the tabs except the first one will be **blocked as pop-up**, so they will need to be authorized.
 
