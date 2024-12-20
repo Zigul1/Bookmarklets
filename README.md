@@ -1,6 +1,6 @@
 
 ## Bookmarklets collection
-(articolo in italiano [qui](...)  ![image](https://github.com/user-attachments/assets/fff61062-49ca-4c48-b82e-c1515ac544dc)
+(articolo in italiano [qui](https://turbolab.it/browser-455/come-automatizzare-navigazione-browser-bookmarklet-4255)  ![image](https://github.com/user-attachments/assets/fff61062-49ca-4c48-b82e-c1515ac544dc)
 )
 
 This is my bookmarklets repository. What is a bookmarklet and how to use it? [Here](https://www.freecodecamp.org/news/what-are-bookmarklets/) is a good explanation with some examples; remember: it's essential that **JavaScript execution** is not blocked in the browser.
