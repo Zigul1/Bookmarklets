@@ -9,7 +9,7 @@ javascript: (function () { const input = document.createElement('input'); input.
 // OpenStreetMap - OSMap
 javascript: (function () { const input = document.createElement('input'); input.setAttribute('value', window.getSelection().toString()); document.body.appendChild(input); input.select(); document.execCommand('copy'); document.body.removeChild(input); navigator.clipboard.readText() .then((text) => { let place = text.replace(/ /g, "+"); let osAddress = "https://www.openstreetmap.org/search?query=" + place; window.open(osAddress, "_blank"); }); })();
 
-// This is the all-in-one bookmarklet the will try to open the 3 maps - AllMaps
+// Usa tutti i precedenti - AllMaps
 javascript: (function () { const input = document.createElement('input'); input.setAttribute('value', window.getSelection().toString()); document.body.appendChild(input); input.select(); document.execCommand('copy'); document.body.removeChild(input); navigator.clipboard.readText() .then((text) => { let place = text.replace(/ /g, "+"); let gmAddress = "https://www.google.com/maps/place/" + place; window.open(gmAddress, "_blank"); let ddgAddress = "https://duckduckgo.com/?hps=1&q=" + place + "&iaxm=maps"; window.open(ddgAddress, "_blank"); let osAddress = "https://www.openstreetmap.org/search?query=" + place; window.open(osAddress, "_blank"); }); })();
 
 
@@ -27,12 +27,12 @@ javascript: (function () { navigator.clipboard.readText() .then((text) => { let 
 // TinyEye - T-img
 javascript: (function () { navigator.clipboard.readText() .then((text) => { let tSearch = "https://tineye.com/search/?url=" + text + "&rpt=imageview"; window.open(tSearch, "_blank"); });})();
 
-// This is the all-in-one bookmarklet - AllImgSearch
+// Usa tutti i precedenti - AllImgSearch
 javascript: (function () { navigator.clipboard.readText() .then((text) => { let bSearch = "https://www.bing.com/images/searchbyimage?FORM=IRSBIQ&cbir=sbi&imgurl=" + text; window.open(bSearch, "_blank"); let ySearch = "https://yandex.com/images/search?source=collections&&url=" + text + "&rpt=imageview"; window.open(ySearch, "_blank"); let gSearch = "https://lens.google.com/uploadbyurl?url=" + text ; window.open(gSearch, "_blank"); let tSearch = "https://tineye.com/search/?url=" + text + "&rpt=imageview"; window.open(tSearch, "_blank"); });})();
 
 
 
-// Others
+// Fuori cartella
 
 
 // Offline-check
@@ -60,4 +60,4 @@ javascript: (function () { navigator.clipboard.readText() .then(function (text) 
 javascript: (function () { const input = document.createElement('input'); input.setAttribute('value', window.getSelection().toString()); document.body.appendChild(input); input.select(); document.execCommand('copy'); document.body.removeChild(input); navigator.clipboard.readText() .then((text) => { let tSearch = "https://www.google.it/search?q=" + text + "+site%3ATurboLab.it"; window.open(tSearch, "_blank");}); }) ()
 
 
-// Per spiegazioni: 
+// Per spiegazioni: https://turbolab.it/browser-455/come-automatizzare-navigazione-browser-bookmarklet-4255
