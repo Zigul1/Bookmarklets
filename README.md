@@ -19,7 +19,7 @@ Once __*selected*__ an address or location from the page, clicking on these book
 
 ### IMGSEARCH
 
-After an image *address* is __*copied*__, using the right click (not "copy image", but "copy image address"), these bookmarklets will look for that image in some reverse image search engine. The ones available are those by Google (**G-img**), Bing (**B-img**), Yandex (**Y-img**) and TinyEye (**T-img**). The "all-in-one" bookmarklet (**AllImgSearch**) will try to open all the reverse image search sites in different tabs, searching for the same image.
+After an image *address* is __*copied*__, using the right click (not "copy image", but "copy image address"), these bookmarklets will look for that image in some reverse image search engine. The ones available are those by Google (**G-img**), Bing (**B-img**), Yandex (**Y-img**) and TinEye (**T-img**). The "all-in-one" bookmarklet (**AllImgSearch**) will try to open all the reverse image search sites in different tabs, searching for the same image.
 
 
 ### OTHERS
