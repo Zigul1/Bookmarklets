@@ -24,7 +24,7 @@ javascript: (function () { navigator.clipboard.readText() .then((text) => { let 
 // Yandex - Y-img
 javascript: (function () { navigator.clipboard.readText() .then((text) => { let ySearch = "https://yandex.com/images/search?source=collections&&url=" + text + "&rpt=imageview"; window.open(ySearch, "_blank"); });})();
 
-// TinyEye - T-img
+// TinEye - T-img
 javascript: (function () { navigator.clipboard.readText() .then((text) => { let tSearch = "https://tineye.com/search/?url=" + text + "&rpt=imageview"; window.open(tSearch, "_blank"); });})();
 
 // Usa tutti i precedenti - AllImgSearch
