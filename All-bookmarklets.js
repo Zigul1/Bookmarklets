@@ -35,10 +35,6 @@ javascript: (function () { navigator.clipboard.readText() .then((text) => { let 
 // Others
 
 
-// Offline-check
-javascript: (function () { let addr = window.location.href; checkAddr = "https://www.isitdownrightnow.com/" + addr.split("https://")[1].split("/")[0] + ".html"; window.open(checkAddr, "_blank"); }) ();
-
-
 // WikiSearch
 javascript: (function () { const input = document.createElement('input'); input.setAttribute('value', window.getSelection().toString()); document.body.appendChild(input); input.select(); document.execCommand('copy'); document.body.removeChild(input); navigator.clipboard.readText() .then((text) => { let topic = text.replace(/ /g, "_"); let wAddress = "https://en.wikipedia.org/wiki/" + topic; window.open(wAddress, "_blank"); }); })();
 
@@ -53,7 +49,7 @@ userChoice = confirm("Click OK for YouTube, Cancel for Invidious"); if (userChoi
 
 
 // Front-ends
-javascript: (function () { navigator.clipboard.readText() .then(function (text) { if (text.includes("/shorts/")) { let videoId = text.split("shorts/")[1].split("&")[0]; let altAddress = "https://yewtu.be/watch?v=" + videoId; window.open(altAddress, "_blank"); } else if (text.includes("youtube.com")) { let videoId = text.split("v=")[1].split("&")[0]; let altAddress = "https://yewtu.be/watch?v=" + videoId; window.open(altAddress, "_blank"); } else if (text.includes("youtu.be")) { let videoId = text.split(".be/")[1].split("&")[0]; let altAddress = "https://yewtu.be/watch?v=" + videoId; window.open(altAddress, "_blank"); } else if (text.includes("twitter.com") || text.includes("x.com")) { let xAcc = text.split(".com")[1].split("&")[0]; let altAddress = "https://xcancel.com/" + xAcc.substring(1); window.open(altAddress, "_blank"); } else if (text.includes("instagram.com")) { let instAcc = text.split(".com")[1].split("&")[0]; let altAddress = "https://www.picuki.com/profile/" + instAcc; window.open(altAddress, "_blank"); } else if (text.includes("tiktok.com")) { let ttAcc = text.split(".com")[1].split("&")[0]; let altAddress = "https://urlebird.com/user/" + ttAcc.substring(1) + "/"; window.open(altAddress, "_blank"); } else { alert("No alternative link found"); } }) })();
+javascript: (function () { navigator.clipboard.readText() .then(function (text) { if (text.includes("/shorts/")) { let videoId = text.split("shorts/")[1].split("&")[0]; let altAddress = "https://yewtu.be/watch?v=" + videoId; window.open(altAddress, "_blank"); } else if (text.includes("youtube.com")) { let videoId = text.split("v=")[1].split("&")[0]; let altAddress = "https://yewtu.be/watch?v=" + videoId; window.open(altAddress, "_blank"); } else if (text.includes("youtu.be")) { let videoId = text.split(".be/")[1].split("&")[0]; let altAddress = "https://yewtu.be/watch?v=" + videoId; window.open(altAddress, "_blank"); } else if (text.includes("twitter.com") || text.includes("x.com")) { let xAcc = text.split(".com")[1].split("&")[0]; let altAddress = "https://xcancel.com/" + xAcc.substring(1); window.open(altAddress, "_blank"); } else if (text.includes("instagram.com")) { let instAcc = text.split(".com")[1].split("&")[0]; let altAddress = "https://imginn.com" + instAcc; window.open(altAddress, "_blank"); } else if (text.includes("tiktok.com")) { let ttAcc = text.split(".com")[1].split("&")[0]; let altAddress = "https://urlebird.com/user/" + ttAcc.substring(1) + "/"; window.open(altAddress, "_blank"); } else { alert("No alternative link found"); } }) })();
 
 
 // More details at: https://github.com/Zigul1/Bookmarklets
